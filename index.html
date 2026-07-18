@@ -537,8 +537,9 @@
             border-top: 1px solid rgba(255,255,255,.04);
             padding-top: 24px; margin-top: 24px;
             display: flex; justify-content: space-between; align-items: center;
-            font-size: 13px; color: var(--text-dim); flex-wrap: wrap; gap: 12px;
+            font-size: 13px; color: var(--text-dim); gap: 12px;
         }
+        .footer-bottom > * { white-space: nowrap; }
 
         /* -------- Scroll Reveal -------- */
         .reveal { opacity: 0; transform: translateY(50px); transition: all .8s cubic-bezier(.4,0,.2,1); }
@@ -567,6 +568,7 @@
             .values-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
             .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-bottom > * { white-space: normal; }
             section { padding: 80px 0; }
         }
         @media (max-width: 480px) {
