@@ -533,12 +533,16 @@
             margin-bottom: 10px; transition: all .3s;
         }
         .footer a:hover { color: var(--accent); padding-left: 4px; }
+        .footer-beian a { display: inline-flex; margin-bottom: 0; padding-left: 0; }
+        .footer-beian a:hover { padding-left: 0; }
         .footer-bottom {
             border-top: 1px solid rgba(255,255,255,.04);
             padding-top: 24px; margin-top: 24px;
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 13px; color: var(--text-dim); flex-wrap: wrap; gap: 12px;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 13px; color: var(--text-dim); flex-wrap: wrap; gap: 24px;
         }
+        .footer-bottom > *, .footer-bottom > * > * { white-space: nowrap; }
+        .footer-beian { display: flex; gap: 16px; align-items: center; }
 
         /* -------- Scroll Reveal -------- */
         .reveal { opacity: 0; transform: translateY(50px); transition: all .8s cubic-bezier(.4,0,.2,1); }
@@ -566,7 +570,8 @@
             .about-stats { grid-template-columns: 1fr 1fr; gap: 16px; }
             .values-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+            .footer-beian { flex-wrap: wrap; justify-content: center; }
             section { padding: 80px 0; }
         }
         @media (max-width: 480px) {
@@ -873,7 +878,10 @@
         </div>
         <div class="footer-bottom">
             <span>&copy; 2026 笃行白泽（北京）科技有限公司. All rights reserved.</span>
-            <span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="color:var(--text-dim);">京ICP备2026043046号</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802049398" target="_blank" rel="noopener" style="color:var(--text-dim);">京公网安备11010802049398号</a></span>
+            <span class="footer-beian">
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">京ICP备2026043046号</a>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802049398" target="_blank" rel="noopener">京公网安备11010802049398号</a>
+            </span>
         </div>
     </div>
 </footer>
