@@ -422,6 +422,11 @@
         .check-insight { background: rgba(77,208,225,.12); color: var(--cyan); }
         .check-sim { background: rgba(212,168,67,.12); color: var(--accent); }
 
+        .tag-radio { background: rgba(0,212,255,.1); color: #00d4ff; border: 1px solid rgba(0,212,255,.15); }
+        .check-radio { background: rgba(0,212,255,.12); color: #00d4ff; }
+        .tag-huiyan { background: rgba(245,158,11,.1); color: #f59e0b; border: 1px solid rgba(245,158,11,.15); }
+        .check-huiyan { background: rgba(245,158,11,.12); color: #f59e0b; }
+
         .product-visual {
             border-radius: 16px; min-height: 300px;
             display: flex; align-items: center; justify-content: center;
@@ -797,6 +802,62 @@
                 </a>
             </div>
         </div>
+
+        <div class="product-card" data-tilt>
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-br"></span>
+            <div class="product-info reveal-left">
+                <span class="product-tag tag-radio">● 网络电台</span>
+                <h3>白泽网络电台</h3>
+                <div class="product-en">Baize NetRadio · Global Radio Aggregator</div>
+                <p>全球网络电台聚合播放器。聚合各省电台资源，支持地理分布地图浏览、HLS / MP3 流媒体播放、播客内容（相声、脱口秀等）、收藏列表与播放队列。支持自定义添加/编辑/删除电台，开放 API 接口。</p>
+                <ul class="product-features">
+                    <li><span class="check check-radio">✓</span> 各省电台分类浏览 — 按省份/地区快速筛选</li>
+                    <li><span class="check check-radio">✓</span> 电台地理分布地图 — 交互式 Leaflet 地图可视化</li>
+                    <li><span class="check check-radio">✓</span> HLS / MP3 流媒体播放 — 支持 m3u8 与直接音频链接</li>
+                    <li><span class="check check-radio">✓</span> 播客内容与收藏队列 — 相声/脱口秀、收藏列表与播放循环</li>
+                </ul>
+                <div class="product-links">
+                    <a href="https://app.dxbzbj.com:82" target="_blank" class="btn btn-primary"><span>在线体验</span> <span class="arrow">→</span></a>
+                    <a href="https://github.com/Kaiserhuang/net-radio" target="_blank" class="btn btn-ghost">GitHub 仓库</a>
+                </div>
+            </div>
+            <div class="product-visual reveal-right">
+                <a href="https://app.dxbzbj.com:82" target="_blank">
+                    <img src="images/白泽网络电台.png" alt="白泽网络电台界面截图" loading="lazy">
+                    <div class="img-overlay"></div>
+                    <div class="img-badge">● NetRadio Streaming</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-card" data-tilt>
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-br"></span>
+            <div class="product-info reveal-right">
+                <span class="product-tag tag-huiyan">● 情报雷达</span>
+                <h3>白泽智眼</h3>
+                <div class="product-en">Baize Huiyan · Hotspot Intelligence Radar</div>
+                <p>热点情报雷达——聚合全网热搜，AI 智能分析。实时捕获百度、微博、知乎、微信、头条等平台热搜榜单，内置 AI 摘要与情感分析、热度趋势追踪、关键词共现网络、情报预警与日报自动生成。</p>
+                <ul class="product-features">
+                    <li><span class="check check-huiyan">✓</span> 全网热点聚合 — 多平台热搜榜单实时捕获</li>
+                    <li><span class="check check-huiyan">✓</span> AI 智能分析 — 内容摘要、情感判别、关键词提取</li>
+                    <li><span class="check check-huiyan">✓</span> 热度趋势追踪 — 热度曲线、爆发预警、短视频热搜</li>
+                    <li><span class="check check-huiyan">✓</span> 历史回溯与日报 — 全时段回溯、智能日报自动生成</li>
+                </ul>
+                <div class="product-links">
+                    <a href="https://app.dxbzbj.com:84" target="_blank" class="btn btn-primary"><span>在线体验</span> <span class="arrow">→</span></a>
+                    <a href="https://github.com/Kaiserhuang/baize-huiyan" target="_blank" class="btn btn-ghost">GitHub 仓库</a>
+                </div>
+            </div>
+            <div class="product-visual reveal-left">
+                <a href="https://app.dxbzbj.com:84" target="_blank">
+                    <img src="images/白泽智眼.png" alt="白泽智眼界面截图" loading="lazy">
+                    <div class="img-overlay"></div>
+                    <div class="img-badge">● Hotspot Radar</div>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -869,6 +930,8 @@
                 <h5>产品</h5>
                 <a href="https://github.com/Kaiserhuang/baize-dongjian.git" target="_blank">白泽洞见</a>
                 <a href="https://github.com/Kaiserhuang/gotham-simulatio.git" target="_blank">哥谭模拟</a>
+                <a href="https://github.com/Kaiserhuang/net-radio" target="_blank">白泽网络电台</a>
+                <a href="https://github.com/Kaiserhuang/baize-huiyan" target="_blank">白泽智眼</a>
             </div>
             <div>
                 <h5>社区</h5>
@@ -916,7 +979,9 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 const phrases = [
             '笃行白泽聚焦开源情报分析与威胁仿真技术，帮助组织从海量公开数据中萃取态势感知、预演威胁场景，让每一个决策都有据可依。',
             '我们构建情报平台，让全球数据一目了然；我们创造仿真系统，让威胁可以被预演。',
-            '从开源情报到威胁仿真 —— 让不确定性变成确定性。'
+            '从开源情报到威胁仿真 —— 让不确定性变成确定性。',
+            '白泽网络电台汇聚全球声音，用电子波编织情报网络。',
+            '白泽慧眼实时扫描全网热点，AI 赋能让情报快人一步。',
 ];
 let pIdx = 0, cIdx = 0, isDeleting = false;
 const typeEl = document.getElementById('typeText');
